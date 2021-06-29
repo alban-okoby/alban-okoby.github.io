@@ -1,0 +1,137 @@
+/* COLORS */
+
+body {
+    --body-bg-color: ;
+    background: var(--body-bg-color);
+}
+
+.header__bottom__section,
+.bg-color {
+    --navbar-bg-color: #ffd700;
+}
+
+.banner__title {
+    --banner-color: white
+}
+
+
+/* HEADER nav && navbar  */
+
+.bg-color {
+    background: var(--navbar-bg-color);
+}
+
+.navbar-nav li a {
+    font-weight: 600;
+    font-style: bold;
+}
+
+.section__wave {
+    height: 0;
+    margin-top: -10%;
+    border: 1px solid var(--header-bg-color);
+}
+
+.svg__first {
+    margin-top: -12%;
+}
+
+.header__bottom__section {
+    background: var(--header-bg-color)
+}
+
+.banner__section {
+    background: url("../images/bg/header-font2.jpg") no-repeat;
+    width: 100%;
+    padding: 20%;
+    height: max(22rem);
+}
+
+.banner_section img {
+    margin-top: 10%;
+    box-shadow: 0 0 9px gray;
+    width: 15%;
+    height: 13rem;
+}
+
+.banner__title {
+    text-align: right;
+    color: var(--banner-color);
+    font-size: 2rem;
+    margin-left: 50%;
+}
+
+
+/*Article section */
+
+.article__section {
+    margin-top: 1%;
+}
+
+.card-wrapper-plat {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30vh, 1fr));
+    grid-gap: 1.5rem;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+.card-plat {
+    background-color: #fff;
+    border-radius: 0.5rem;
+    box-shadow: 0.05rem 0.1rem 0.9rem 0.5rem rgb(163, 163, 155);
+    padding-bottom: 1rem;
+}
+
+.card-img {
+    width: max(93%);
+    height: max(12rem);
+    margin-left: 3%;
+    margin-right: 1%;
+    border-radius: .3rem;
+    margin-top: .6rem;
+    -webkit-transform: scale(.97);
+    filter: grayscale(.7);
+}
+
+.card-img:hover {
+    transition: transform 200ms ease-out;
+    -webkit-transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+    -webkit-transform: scale(.90);
+    filter: grayscale(0);
+}
+
+.card-title {
+    text-align: center;
+    color: black
+}
+
+.price-stock .price {
+    margin-left: 21px;
+}
+
+.card-plat>:last-child {
+    margin-bottom: 0;
+}
+
+.card-plat a:hover {
+    text-decoration: none;
+}
+
+
+/* responsive screen */
+
+@media screen and(max-width:960px) {
+    .header__bottom {
+        height: max(25rem);
+    }
+}
+
+@media screen and (max-width:760px) {
+    .header__bottom {
+        height: max(22rem);
+    }
+}
