@@ -1,0 +1,20 @@
+:root {
+    /* --sidebar: white; */
+    --sidebar_bg: #39a763;
+    --header: rgb(31, 30, 30);
+    /* --header_bg: #1cbe29; */
+    /* --header_bg: linear-gradient(orange, orange, #1cbe29); */
+    --header_bg: #e6dede;
+    --bar-btn_bg: #1cbe29;
+    --bar-btn: white;
+    --bar-cancel_bg: #39a763;
+    --bar-cancel: white;
+    --bar-cancel-hover_bg: #b34444;
+    --banner__caption: white;
+    --banner_caption_bg: gray;
+    --bottom_banner_wave: #f0a211;
+    --first__article: white;
+    --footer: gray;
+    --footer_bg: linear-gradient(rgb(29, 26, 26), black);
+    --footer_hr: linear-gradient(to left, orange, orange, orange, white, rgb(7, 151, 14), rgb(7, 151, 14));
+}

@@ -1,0 +1,238 @@
+:root {
+    /* --header: rgb(20, 20, 20);
+    --header_bg: rgb(248, 247, 247);
+    --header_btn: white;
+    --openNav: black; */
+    --banner__caption: white;
+    --banner_caption_bg: gray;
+    --first__article: white;
+    --footer: gray;
+    --footer_bg: linear-gradient(rgb(29, 26, 26), black);
+    --footer_hr: linear-gradient(to right, orange, orange, orange, white, rgb(7, 151, 14), rgb(7, 151, 14));
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+body ul {
+    list-style: none;
+    text-decoration: none;
+}
+
+
+/* general */
+
+header {
+    background: var(--header_bg);
+    color: var(--header);
+    padding: 27px;
+}
+
+
+/* 
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: var(--header_bg);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    box-shadow: 0 6px 1rem rgb(17, 17, 17);
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #3a3535;
+    display: block;
+    transition: 0.3s
+}
+
+.sidenav a:hover,
+.offcanvas a:focus {
+    color: #5c5b5b;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    cursor: pointer;
+}
+
+.open__button {
+    color: var(--openNav);
+    font-size: 35px;
+    cursor: pointer;
+    margin-left: .5rem;
+    width: 36px;
+    /* position: fixed; */
+
+
+/* z-index: 999; */
+
+
+/* } */
+
+*/ header article {
+    /* background: rgb(247, 245, 245); */
+    /* box-shadow: 0 6px 1rem rgb(17, 17, 17); */
+    margin-bottom: .6rem;
+    border-radius: .5rem;
+    /* overflow-x: scroll; */
+}
+
+
+/*
+.header__svg {
+     margin-top: -747px; 
+    transform: translateY(-112px); 
+}*/
+
+.banner .banner__img {
+    /* width: max(100%);
+    height: max(22rem); */
+    width: 100%;
+}
+
+.banner h4 {
+    border: 2px solid red;
+    text-align: center;
+    margin-top: -15rem;
+    font-size: 40px;
+    padding-left: 30%;
+    padding-right: 30%;
+    color: var(--banner__caption);
+}
+
+.banner input {
+    margin-left: 43%;
+    margin-right: 33%;
+    cursor: pointer;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+
+/*section article  */
+
+.banner_btn {
+    border-radius: 1.3rem;
+    padding: .6rem;
+}
+
+.first_article {
+    margin-top: 7%;
+}
+
+.first_article .card-wrapper,
+.second_article .card-wrapper,
+.third_article .card-wrapper,
+.footer-list-wrapper {
+    /* width: 900px; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30ch, 1fr));
+    grid-gap: 1.8rem;
+    margin-right: 2rem;
+}
+
+.first_article .card-wrapper .card,
+.second_article .card-wrapper .card,
+.third_article .card-wrapper .card {
+    background: var(--header_bg);
+    /* box-shadow: .05rem .1rem .3rem -.03rem rgb(0, 0, 0, 45); */
+    box-shadow: 0 6px 1rem rgb(17, 17, 17);
+    padding-bottom: .1rem;
+    margin-bottom: 2rem;
+    list-style: none;
+    border-radius: .8rem;
+}
+
+.first_article .card-wrapper .card img {
+    width: 100%;
+    height: 11rem;
+}
+
+.second_article .card-wrapper .card img {
+    width: 100%;
+    height: 17rem;
+}
+
+.third_article .card-wrapper .card img {
+    width: 100%;
+    height: 15rem;
+}
+
+img~* {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.first_article h3,
+.first_article p,
+.second_article h3,
+.second_article p,
+.third_article h3,
+.third_article p,
+.first_article .card-wrapper .card h3,
+.first_article .card-wrapper .card p,
+.second_article .card-wrapper .card h3,
+.second_article .card-wrapper .card p {
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+div>h3 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: oblique;
+    font-size: x-large;
+    margin-bottom: -1rem;
+}
+
+
+/* FOOTER  */
+
+footer {
+    background: var(--footer_bg);
+    color: var(--footer);
+}
+
+footer h3 {
+    text-align: center;
+}
+
+footer hr {
+    padding: .3rem;
+    background: var(--footer_hr)
+}
+
+footer div a {
+    float: right;
+    margin-right: .9rem;
+    padding: .6rem;
+    background: rgb(7, 151, 14);
+    color: white;
+    margin-top: -47px;
+    font-size: large;
+    border-radius: 50px;
+    margin-right: 0%;
+    text-decoration: overline;
+    text-decoration-color: orange;
+}

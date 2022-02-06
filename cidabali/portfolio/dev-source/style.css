@@ -1,0 +1,230 @@
+:root {
+    --body-color: ;
+    --header__bg: #2C3E50;
+    --header__bottom__bg: #1ABC9C;
+    --header: white;
+    --section__portfolio: white;
+    --portfolio__one: #ba4c63;
+    --portfolio__two: #3296cfe1;
+    --portfolio__tree: #130f0f;
+    --portfolio__tree__img_bd: white;
+    --portfolio__one_img_bg: #2ae48d;
+    --footer: #fff;
+    --footer__bg: #2C3E50;
+    --footer__title: darkorange;
+}
+
+body {
+    margin: 0;
+    background: var(--body-color);
+}
+
+header {
+    background: var(--header__bg);
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    color: var(--header);
+    /* box-shadow: 0 0 3px 3px white; */
+}
+
+header ul {
+    list-style: none;
+    margin-top: 19px;
+    display: flex;
+    font-size: 17px;
+}
+
+header ul li {
+    display: inline-flex;
+    justify-content: space;
+    margin-right: 15px;
+}
+
+.empty__banner {
+    background: var(--header__bottom__bg);
+    padding-bottom: 3rem;
+}
+
+
+/* FIRST SECTION */
+
+.section__p h3 {
+    text-align: center;
+    margin-top: 60px;
+}
+
+.section__p .etoile {
+    margin-top: -23px;
+    font-size: x-large;
+}
+
+.portfeuille__section {
+    /* display: flex; */
+    justify-content: center;
+    margin-bottom: 5%;
+    margin-left: 23%;
+    margin-right: 23%;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15ch, 1fr));
+    grid-gap: 1.3rem;
+}
+
+.portfeuille__section div {
+    margin-left: 1%;
+}
+
+.portfeuille__section .project__one {
+    background: var(--portfolio__one);
+    padding: 7%;
+}
+
+.portfeuille__section .project__one img {
+    background: var(--portfolio__one_img_bg);
+    border-radius: 75px;
+}
+
+.portfeuille__section .project__two {
+    background: var(--portfolio__two);
+    padding: 7%;
+}
+
+.portfeuille__section .project__tree {
+    background: var(--portfolio__tree);
+    padding: 7%;
+}
+
+.portfeuille__section .project__tree img {
+    border-radius: 75px;
+}
+
+.portfeuille__section div img {
+    height: 120px;
+    width: 120px;
+}
+
+.rounded-img {
+    border-radius: 75px;
+}
+
+
+/* section des cartes */
+
+.carte {
+    border: 1px solid solid;
+    border-radius: .6rem;
+    list-style: none;
+    box-shadow: 0 0 0.9rem rgb(0, 0, 0);
+}
+
+.carte img {
+    width: 100%;
+    transform: scale(.9);
+    max-height: 8rem;
+}
+
+.carte img:hover {
+    transform: scale(.8);
+    transition: 300ms ease-out;
+    filter: grayscale(1);
+}
+
+.carte h4,
+p {
+    text-align: center;
+}
+
+.grande-carte {
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(35ch, 1fr));
+    grid-gap: 1.7rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+
+/* FOOTER */
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    background: var(--footer__bg);
+    color: var(--footer);
+}
+
+footer ul {
+    list-style: none;
+    margin-left: -2rem;
+}
+
+footer .second__ul {
+    display: flex;
+    margin-right: 1rem;
+}
+
+.second__title {
+    margin-left: 3rem;
+}
+
+footer .second__title+li {
+    list-style: none;
+    text-align: center;
+}
+
+footer .second__ul li {
+    margin-right: .5rem;
+    border: 1px solid white;
+    border-radius: 75px;
+    padding: .7rem;
+    cursor: pointer;
+}
+
+footer h3 {
+    color: var(--footer__title);
+}
+
+footer .second__ul li:hover {
+    background: var(--footer);
+    color: var(--footer__bg);
+    transition: .2s;
+    transform: scale(1.2);
+    font-weight: 600;
+}
+
+footer .second__ul .wh:hover {
+    background: rgb(49, 241, 49);
+    color: var(--footer);
+    transition: .2s;
+}
+
+footer .second__ul .tw:hover {
+    background: rgb(70, 70, 243);
+    color: white;
+    transition: .2s;
+}
+
+footer .second__ul .fb:hover {
+    background: rgb(12, 56, 197);
+    color: white;
+    transition: .2s;
+}
+
+@media screen and (max-width:1024px) {
+    footer {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    footer .second__ul {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width:480px) {
+    header ul {
+        flex-direction: column;
+    }
+}
