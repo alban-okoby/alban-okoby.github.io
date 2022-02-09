@@ -13,7 +13,7 @@
 
     // Défilement.
     $('#nav a,.remote__button, .scrolly').scrolly({
-        speed: 1500,
+        speed: 500,
         offset: function() { return $div.height(); }
     });
 
