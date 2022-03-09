@@ -1,0 +1,179 @@
+/* :root {
+    --sidebar: white;
+    --sidebar_bg: #39a763;
+    --header: white;
+    --header_bg: #1cbe29;
+    --bar-btn_bg: #1cbe29;
+    --bar-btn: white;
+    --bar-cancel_bg: #39a763;
+    --bar-cancel: white;
+    --bar-cancel-hover_bg: #b34444;
+}
+ */
+
+
+/* For all screen */
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+.sidebar {
+    background: var(--sidebar_bg);
+    font-weight: 600;
+}
+
+.sidebar header {
+    color: var(--header);
+}
+
+
+/* For screen < 450px  */
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+
+/* For only large screens */
+
+@media only screen and (min-width: 963px) {
+    .sidebar {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        padding: 21px 19px;
+        background: var(--header_bg);
+        box-shadow: 0 6px 1rem rgb(17, 17, 17);
+    }
+    .sidebar header {
+        margin-left: 5%;
+        font-size: x-large;
+    }
+    .sidebar,
+    .sidebar ul {
+        display: flex;
+        justify-content: space-between;
+    }
+    .sidebar ul {
+        margin-right: 9%;
+    }
+    .sidebar ul li {
+        margin-left: 11px;
+        align-items: center;
+        text-align: center;
+        padding: 2px 4px;
+        justify-content: space-between
+    }
+    .sidebar ul li a {
+        padding: 2px 14px;
+        color: var(--sidebar);
+        font-size: 20px;
+        box-sizing: border-box;
+        border-top: solid 2px rgba(255, 255, 255, .1);
+        transition: .4s;
+    }
+    .sidebar ul li:hover a {
+        padding-left: 10px;
+        border-bottom: solid 2px rgba(255, 255, 255, .1);
+    }
+}
+
+
+/* For small and medium screens */
+
+@media screen and (max-width: 962px) {
+    .sidebar {
+        position: fixed;
+        height: 100%;
+        background: var(--sidebar_bg);
+        width: 250px;
+        margin-left: -250px;
+    }
+    .sidebar header {
+        line-height: 70px;
+        user-select: none;
+        text-align: center;
+        font-size: 22px;
+        background: var(--header_bg);
+    }
+    .sidebar ul a {
+        color: white;
+        display: block;
+        height: 100%;
+        width: 100%;
+        font-size: 20px;
+        line-height: 65px;
+        padding-left: 40px;
+        box-sizing: border-box;
+        border-top: solid 2px rgba(255, 255, 255, .1);
+        border-bottom: solid 1px black;
+        transition: .4s;
+    }
+    .sidebar ul li:hover a {
+        padding-left: 50px;
+    }
+    #check {
+        display: none;
+    }
+    label #btn,
+    label #cancel {
+        position: absolute;
+        border-radius: 3px;
+        cursor: pointer;
+        font-size: 30px;
+    }
+    label #btn {
+        left: 40px;
+        top: 25px;
+        padding: 6px 12px;
+        transition: .5s;
+        background: var(--bar-btn_bg);
+        color: var(--bar-btn);
+    }
+    label #cancel {
+        padding: 2px 5px;
+        top: 17px;
+        left: 195px;
+        margin-left: 22px;
+        margin-top: -17px;
+        z-index: 1111;
+        transition: all .5s ease;
+        opacity: 0;
+        background: var(--bar-cancel_bg);
+        color: var(--bar-cancel);
+    }
+    label #cancel:hover {
+        background: var(--bar-cancel-hover_bg);
+        transition: .2s;
+    }
+    #check:checked~.sidebar {
+        margin-left: 0;
+    }
+    #check:checked~label #btn {
+        left: 250px;
+        opacity: 0;
+        pointer-events: none;
+    }
+    #check:checked~label #cancel {
+        left: 195px;
+        opacity: 1;
+    }
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
+}
