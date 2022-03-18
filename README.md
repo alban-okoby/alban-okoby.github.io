@@ -1,3 +1,5 @@
-# thefood
+# Quelques templates de mes sites
 
-Site de forte proposition de divers restaurants ainsi ques de plusieurs plats  
+ Cidabali ( site de restaurant)
+Thezoo ( site de présentation d'animaux )
+Dev-Source ( site de partage de code entre dev )  
