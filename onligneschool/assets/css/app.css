@@ -3,6 +3,7 @@
 /* Couleurs de la page */
 :root {
     --violet : #320450;
+    --violet2 : #520d80;
     --pink : rgb(209, 27, 200);
     --white : white;
     /* --body : #333; */
@@ -11,6 +12,7 @@
     --accueil : linear-gradient(to bottom, #660746, #660746, orange);
     --gray : #666;
     --green : #2db92d;
+    --sectionTitle: black;
 }
 *{
     font-family: 'Roboto', sans-serif;
@@ -240,7 +242,8 @@ header .fa-times {
         box-shadow: 0 .3rem .5rem rgba(0, 0, 0, .3);
         margin: 2rem;
     }
-    .box-container .box i{
+    .home-section .box-container .box i,
+    .formation .box-container .box i {
         background-color: var(--pink);
         color: var(--white);
         width: 6rem;
@@ -254,14 +257,14 @@ header .fa-times {
         transform: scale(1.1)
     }
     .box-container .box h1{
-        color: var(--pink);
+        color: var(--sectionTitle);
         font-size: 2rem;
         transition: .3s;
     }
-    .box-container .box:hover h1{
+    /* .box-container .box:hover h1{
         color: var(--orange);
         transition: .2s;
-    }
+    } */
     .home-section .box-container .box:hover i{
         color: var(--green);
         transition: .2s;
@@ -287,13 +290,17 @@ header .fa-times {
         border-top: 75vh solid var(--white);
         z-index: -1;
     }
+    .formation .box-container {
+        width: 100%;
+    }
 /* FIN DE SECTION D'ACCUEIL' */
 
 /* STYLE A PROPOS  */
 .heading {
-    color: var(--pink);
+    color: var(--violet2);
     font-size: 4rem;
     padding-top: 6rem;
+    margin-top: 4rem;
     padding: 0 1rem;
     text-align: center;
     letter-spacing: .2rem;
@@ -415,11 +422,12 @@ header .fa-times {
         line-height: 6.5rem;
         text-align: center;
         border-radius: 50%;
-        border: 1rem solid var(--white);
+        border-top: 1rem solid var(--white);
+        border-bottom: 1rem solid var(--violet2);
         border-left: solid 1rem var(--pink);
         border-right: solid 1rem var(--pink);
-        box-shadow: 0 .9rem var(--white) inset;
-        /* box-shadow: 0 0 0 1rem var(--white); */
+        box-shadow: 0 .9rem var(--white) inset !important;
+        box-shadow: 0 0 0 .7rem var(--white) inset;
         font-size: 2.9rem;
 
     }
@@ -434,5 +442,37 @@ header .fa-times {
     }
 /* STYLE DE LA SECTION COURS || FORMATIONS */
 
+/* STYLE DE LA SECTION NOTES */
+.note .box-container .box{
+    height : 23rem;
+    border-left: solid .4rem var(--violet);
+    border-bottom: solid .4rem var(--violet);
+    box-shadow: 0 .3rem .5rem #9927274d;
+}
+.note .box-container img{
+    width : 11rem;
+    height : 10rem; 
+    border-radius: 50%;
+    object-fit: cover;
+    border: .7rem solid var(--pink);
+    border-left: solid .7rem var(--violet);
+    border-bottom: solid .7rem var(--violet);
+}  
+
+.note .box-container .box h3{
+        color: var(--sectionTitle);
+        padding: 0 .5rem;
+        font-size: 2rem;
+    }
+    .note .box-container .box p{
+        color: var(--gray);
+        padding: 0 .5rem;
+        font-size: 1.4rem;
+    }
+    .note .box-container .box i{
+        color: var(--violet);
+        font-size: 1.3rem;
+    }
+/* STYLE DE LA SECTION NOTES */
 
 
