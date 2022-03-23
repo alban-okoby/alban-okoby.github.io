@@ -8,7 +8,7 @@
     /* --body : #333; */
     --orange : #ff7b00;
     /* --accueil : #660746; */
-    --accueil : linear-gradient(to bottom, #d67171, #d67171, white, white, white);
+    --accueil : linear-gradient(to bottom, #660746, #660746, orange);
     --gray : #666;
     --green : #2db92d;
 }
@@ -36,7 +36,7 @@ body {
 /* SECTION d'ACCUEIL (premier visuel) */
 #block-accueil {
     padding-bottom: 0;
-    background : var(--accueil)
+    background : var(--accueil);
 }
 /* HEADER BLOC */
 header {
@@ -120,6 +120,9 @@ header .fa-times {
     html {
         font-size: 55%;
     }
+    #block-accueil {
+        min-height: 40vh;
+    }
     header .fa-bars {
         display:block;
     }
@@ -137,14 +140,14 @@ header .fa-times {
         flex-flow: column;
     }
     header .navbar ul li a{
+        font-size: 3rem;
         text-align: center;
         width: 100%;
         margin: 1rem 0;
-    }
-    header .navbar ul li a{
-        font-size: 3rem;
         display: block;
+        font-size: 1.5rem;
     }
+
     header .nav-toggle {
         top: 5.5rem;
         opacity: 1;
@@ -173,12 +176,9 @@ header .fa-times {
     .home-section {
         position: relative;
         background-position: center;
-        min-height: 100vh;
+        min-height: 90vh;
         background-attachment: fixed;
-        background: url('../image/nature_et_eau3.png');
-        /* background: url('../img/nature_et_eau3.png');  */
-
-        /* Noublie pas d'ajouter une image de fond */
+        background: url('../image/sergey-zolkin.jpg');
         z-index: 0;
         overflow: hidden;
         background-size: cover;
@@ -188,8 +188,8 @@ header .fa-times {
         display:flex;
         align-items: center;
         flex-flow: column;
-        padding-top:14rem;
-        padding: bottom 8px;
+        padding-top:15rem;
+        padding: bottom 1px;
     }
     .home-section .content h1 {
         color: var(--white);
@@ -262,13 +262,13 @@ header .fa-times {
         color: var(--orange);
         transition: .2s;
     }
-    .box-container .box:hover i{
+    .home-section .box-container .box:hover i{
         color: var(--green);
         transition: .2s;
         transform: scale(1);
         /* background-color: var(--orange) */
     }
-    .box-container .box:hover p{
+    .home-section .box-container .box:hover p{
         font-weight: 600;
     }
     .box-container .box p{
@@ -307,6 +307,17 @@ header .fa-times {
     font-weight: 400; 
     
 }
+@media screen and ((min-width: 912px) and (min-height:900px)) {
+    
+    .home-section {
+        margin-bottom: -11rem;
+        box-shadow: 0 .3rem .5rem rgba(0, 0, 0, .3);
+    }
+    .about {
+        position: relative;
+        padding: 3rem 2rem;
+    }
+}
 .about .row {
     display: flex;
     justify-content: center;
@@ -320,7 +331,7 @@ header .fa-times {
     height: 50vh;
 }
 .about .content h3 {
-    color: var(--white);
+    color: var(--black);
     font-size: 3rem;
 }
 .about .content p {
@@ -332,13 +343,14 @@ header .fa-times {
     background-color: var(--pink);
     color: var(--white);
     height : 3.5rem;
-    width : 16rem;
+    width : 15rem;
     font-size: 2rem;
     border-radius: 5rem;
     border: none;
     box-shadow: 0 .3rem 1rem rgb(0, 0, 0, .3);
     cursor: pointer;
     transition: .2s;
+    margin-top: .9rem;
 
 }
 /* FIN DE STYLE A PROPOS  */
@@ -391,4 +403,36 @@ header .fa-times {
     }
 
 /* FIN DE STYLE DE LA SECTION FORMATEURS */
+
+/* STYLE DE LA SECTION COURS || FORMATIONS */
+.formation .box-container .box {
+    height: 25rem;
+    box-shadow: .4rem .5rem .1rem var(--violet);
+    border-radius: 1rem;
+}
+    .formation .box-container .box i {
+        height: 8rem; width: 8rem;
+        line-height: 6.5rem;
+        text-align: center;
+        border-radius: 50%;
+        border: 1rem solid var(--white);
+        border-left: solid 1rem var(--pink);
+        border-right: solid 1rem var(--pink);
+        box-shadow: 0 .9rem var(--white) inset;
+        /* box-shadow: 0 0 0 1rem var(--white); */
+        font-size: 2.9rem;
+
+    }
+    .formation .box-container .box h3 {
+        font-size: 1.9rem;
+        color: var(--violet);
+        padding:  0.5rem 0;
+    }
+    .formation .box-container .box p {
+        font-size: 1.3rem;
+        color: var(--black);
+    }
+/* STYLE DE LA SECTION COURS || FORMATIONS */
+
+
 
