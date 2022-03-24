@@ -39,6 +39,7 @@ body {
 #block-accueil {
     padding-bottom: 0;
     background : var(--accueil);
+    border-bottom: white;
 }
 /* HEADER BLOC */
 header {
@@ -109,190 +110,135 @@ header .fa-bars {
     cursor: pointer;
     display: none;
     transform: rotate(-180deg);
-    transition: .4s ease-in;
+    transition: .2s ease-in;
 }
 
 header .fa-times {
     color: var(--pink);
     transform: rotate(180deg);
-    transition: .6s ease-out;
+    transition: .4s ease-out;
 } 
-@media screen and (max-width: 768px) {
-    /* RESPONSIVE HEADER*/
-    html {
-        font-size: 55%;
-    }
-    #block-accueil {
-        min-height: 40vh;
-    }
-    header .fa-bars {
-        display:block;
-    }
-    header .navbar {
-        background-color: var(--white);
-        width: 100%;
-        top:-100rem;left:0;
-        border-radius: 1rem;
-        position:fixed;
-        opacity: 0;
-        transition:.2s ease-out;
-    }
-    header .navbar ul{
-        padding: 2rem 0;
-        flex-flow: column;
-    }
-    header .navbar ul li a{
-        font-size: 3rem;
-        text-align: center;
-        width: 100%;
-        margin: 1rem 0;
-        display: block;
-        font-size: 1.9rem;
-    }
-
-    header .nav-toggle {
-        top: 5.5rem;
-        opacity: 1;
-    }
-
-    /* RESPONSIVE DE LA SECTION ACCEUIL */
-    .home-section .content p {
-        padding: 1.5rem 2rem;
-    }
-    .home-section::before {
-        display: none;
-    }
-    .about .row {
-        flex-flow: column-reverse;
-    }
-    .about .image img { 
-        width :90vw;
-        height :20vh;
-    }
-    .about .content {
-        padding: 2.5rem
-    }
-}
 
 /* SCECTION D'ACCUEIL */
-    .home-section {
-        position: relative;
-        background-position: center;
-        min-height: 90vh;
-        background-attachment: fixed;
-        background: url('../image/sergey-zolkin.jpg');
-        z-index: 0;
-        overflow: hidden;
-        background-size: cover;
-    }
+.home-section {
+    position: relative;
+    background-position: center;
+    min-height: 100vh;
+    background-attachment: fixed;
+    background: url('../image/sergey-zolkin.jpg');
+    z-index: 0;
+    overflow: hidden;
+    background-size: cover;
+    
+}
 
-    .home-section .content {
-        display:flex;
-        align-items: center;
-        flex-flow: column;
-        padding-top:15rem;
-        padding: bottom 1px;
-    }
-    .home-section .content h1 {
-        color: var(--white);
-        font-size: 5rem;
-        padding: 0 1rem;
-        text-transform: uppercase;
-        text-shadow: 0 .3rem .5rem rgba(0, 0, 0, .3);
-        
-    }
-    .home-section p {
-        color: var(--white);
-        font-size: 2rem;
-        padding: 0 24rem;
-    }
+.home-section .content {
+    display:flex;
+    align-items: center;
+    flex-flow: column;
+    padding-top:17rem;
+    padding: bottom 1px;
+}
+.home-section .content h1 {
+    color: var(--white);
+    font-size: 5rem;
+    padding: 0 1rem;
+    text-transform: uppercase;
+    text-shadow: 0 .3rem .5rem rgba(0, 0, 0, .3);
+    
+}
+.home-section p {
+    color: var(--white);
+    font-size: 2rem;
+    padding: 0 24rem;
+}
 
-    .home-section button {
-        background-color: var(--pink);
-        color: var(--white);
-        border-radius: 4rem;
-        border: none;
-        box-shadow: 0 .4rem 1rem rgb(230, 225, 225);
-        /* box-shadow: 0 0rem 0rem .3rem; */
-        font-size: 2rem;
-        padding: .5rem 2rem;
-        margin-top: .5rem;
-        cursor: pointer;
-        transition: .3s;
-        width: 17rem;
-        height: 5rem;
-    }
-    .home-section button:hover {
-        letter-spacing: 0.4rem;
-        transition: .3s;
-    }
-    .box-container {
-        display:flex;
-        align-items: center;
-        text-align: center;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    .box-container .box{
-        background-color: var(--white);
-        text-align: center;
-        height: 21rem;
-        width: 25rem;
-        border-radius: 1rem;
-        box-shadow: 0 .3rem .5rem rgba(0, 0, 0, .3);
-        margin: 2rem;
-    }
-    .home-section .box-container .box i,
-    .formation .box-container .box i {
-        background-color: var(--pink);
-        color: var(--white);
-        width: 6rem;
-        height: 6rem;
-        margin: 2rem 0;
-        font-size: xx-large;
-        line-height: 5.9vh;
-        text-align: center;
-        border-radius: 50%;
-        transition: .3s;
-        transform: scale(1.1)
-    }
-    .box-container .box h1{
-        color: var(--sectionTitle);
-        font-size: 2rem;
-        transition: .3s;
-    }
-    /* .box-container .box:hover h1{
-        color: var(--orange);
-        transition: .2s;
-    } */
-    .home-section .box-container .box:hover i{
-        color: var(--green);
-        transition: .2s;
-        transform: scale(1);
-        /* background-color: var(--orange) */
-    }
-    .home-section .box-container .box:hover p{
-        font-weight: 600;
-    }
-    .box-container .box p{
-        color: var(--gray);
-        font-size: 1.3rem;
-        transition: .2s;
-        padding: 1rem 2rem;
-    }
-    .home-section::before {
-        width: 120%;
-        content: '';
-        position: absolute;
-        left:50%;bottom: -25%;
-        transform: translateX(-50%);
-        border-radius: 50%;
-        border-top: 75vh solid var(--white);
-        z-index: -1;
-    }
-    .formation .box-container {
-        width: 100%;
-    }
+.home-section button {
+    background-color: var(--pink);
+    color: var(--white);
+    border-radius: 4rem;
+    border: none;
+    box-shadow: 0 .4rem 1rem rgb(230, 225, 225);
+    /* box-shadow: 0 0rem 0rem .3rem; */
+    font-size: 2rem;
+    padding: .5rem 2rem;
+    margin-top: .5rem;
+    cursor: pointer;
+    transition: .3s;
+    width: 17rem;
+    height: 5rem;
+}
+.home-section button:hover {
+    letter-spacing: 0.4rem;
+    transition: .3s;
+}
+.box-container {
+    display:flex;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.box-container .box{
+    background-color: var(--white);
+    text-align: center;
+    height: 21rem;
+    width: 25rem;
+    border-radius: 1rem;
+    box-shadow: 0 .3rem .5rem rgba(0, 0, 0, .3);
+    margin: 2rem;
+}
+.home-section .box-container .box i,
+.formation .box-container .box i {
+    background-color: var(--pink);
+    color: var(--white);
+    width: 6rem;
+    height: 6rem;
+    margin: 2rem 0;
+    font-size: xx-large;
+    line-height: 5.9vh;
+    text-align: center;
+    border-radius: 50%;
+    transition: .3s;
+    transform: scale(1.1)
+}
+.box-container .box h1{
+    color: var(--sectionTitle);
+    font-size: 2rem;
+    transition: .3s;
+}
+/* .box-container .box:hover h1{
+    color: var(--orange);
+    transition: .2s;
+} */
+.home-section .box-container .box:hover i{
+    color: var(--green);
+    transition: .2s;
+    transform: scale(1);
+    /* background-color: var(--orange) */
+}
+.home-section .box-container .box:hover p{
+    font-weight: 600;
+}
+.box-container .box p{
+    color: var(--gray);
+    font-size: 1.3rem;
+    transition: .2s;
+    padding: 1rem 2rem;
+}
+.home-section::before {
+    width: 120%;
+    content: '';
+    position: absolute;
+    left:50%;bottom: -25%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    border-top: 80vh solid var(--white);
+    z-index: -1;
+}
+.formation .box-container {
+    width: 100%;
+}
 /* FIN DE SECTION D'ACCUEIL' */
 
 /* STYLE A PROPOS  */
@@ -314,17 +260,7 @@ header .fa-times {
     font-weight: 400; 
     
 }
-@media screen and ((min-width: 912px) and (min-height:900px)) {
-    
-    .home-section {
-        margin-bottom: -11rem;
-        box-shadow: 0 .3rem .5rem rgba(0, 0, 0, .3);
-    }
-    .about {
-        position: relative;
-        padding: 3rem 2rem;
-    }
-}
+
 .about .row {
     display: flex;
     justify-content: center;
@@ -335,7 +271,7 @@ header .fa-times {
 }
 .about .row img {
     width: 70vw;
-    height: 50vh;
+    height: 40vh;
 }
 .about .content h3 {
     color: var(--black);
@@ -463,16 +399,133 @@ header .fa-times {
         color: var(--sectionTitle);
         padding: 0 .5rem;
         font-size: 2rem;
-    }
-    .note .box-container .box p{
-        color: var(--gray);
-        padding: 0 .5rem;
-        font-size: 1.4rem;
-    }
-    .note .box-container .box i{
-        color: var(--violet);
-        font-size: 1.3rem;
-    }
+}
+.note .box-container .box p{
+    color: var(--gray);
+    padding: 0 .5rem;
+    font-size: 1.4rem;
+}
+.note .box-container .box i{
+    color: var(--violet);
+    font-size: 1.3rem;
+}
 /* STYLE DE LA SECTION NOTES */
 
+/* STYLE DE LA SECTION FOOTER */
+footer {
+    text-align: center;
+    padding-bottom: 6rem;
+}
+footer .icons {
+    padding: 3rem 0;
+}
+footer .icons a {
+    color: var(--violet2);
+    /* background: var(--pink); */
+    border: solid .2rem var(--violet);
+    height: 4.5rem;
+    width: 4.5rem;
+    line-height: 4.5rem;
+    border-radius: 50%;
+    font-size: 2.5rem;  
+    margin: 0 1rem;
+    transition: 200ms linear;
+}
+footer .icons a:hover {
+    background: var(--pink);
+    color: var(--white);
+}
+footer .credit{
+    font-size:x-large;
+}
+footer .credit span,a{
+    color: var(--pink);
+}
+/* STYLE DE LA SECTION FOOTER */
 
+@media screen and (min-width: 870px) {
+    
+    .home-section {
+        margin-bottom: -11rem;
+        box-shadow: 0 .3rem .5rem rgba(0, 0, 0, .3);
+    }
+    .about {
+        position: relative;
+        padding: 3rem 2rem;
+        margin-top: -14rem;
+    }
+    .about .image img {
+        min-height: 30vh;
+    }
+}
+@media screen and (min-width: 769px) and (max-width: 850px) {
+    .about {
+        position: relative;
+        padding: 3rem 2rem;
+        margin-top: -28em;
+        margin-top: -8rem;
+
+    }
+  }
+
+@media screen and (max-width: 768px) {
+    /* RESPONSIVE HEADER*/
+    html {
+        font-size: 55%;
+    }
+    #block-accueil {
+        min-height: 40vh;
+    }
+    header .fa-bars {
+        display:block;
+    }
+    header .navbar {
+        background-color: var(--white);
+        width: 100%;
+        top:-100rem;left:0;
+        border-radius: 1rem;
+        position:fixed;
+        opacity: 0;
+        transition:.2s ease-out;
+    }
+    header .navbar ul{
+        padding: 2rem 0;
+        flex-flow: column;
+    }
+    header .navbar ul li a{
+        font-size: 3rem;
+        text-align: center;
+        width: 100%;
+        margin: 1rem 0;
+        display: block;
+        font-size: 1.5rem;
+    }
+
+    header .nav-toggle {
+        top: 5.5rem;
+        opacity: 1;
+    }
+
+    /* RESPONSIVE DE LA SECTION ACCEUIL */
+    .home-section .content p {
+        padding: 1.5rem 2rem;
+    }
+    .home-section::before {
+        display: none;
+    }
+    .about .row {
+        flex-flow: column-reverse;
+    }
+    .about .image img { 
+        width :90vw;
+        height :20vh;
+    }
+    .about .content {
+        padding: 2.5rem
+    }
+    .formateur .card img {
+        height : 26.9vh;
+        border-top-left-radius: 11rem;
+        border-bottom-right-radius: 11rem;
+    }
+}

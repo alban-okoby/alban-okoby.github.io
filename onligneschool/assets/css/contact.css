@@ -1,0 +1,72 @@
+@import 'app.css';
+
+:root {
+    --contact : #333;
+}
+
+.contact {
+    background: var(--contact);
+    margin-top: 17rem;
+    position: relative;
+}
+.contact .row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem 0;
+    
+}
+.contact .row .image img{
+    width: 50vw;
+    height: 35vh;
+}
+.contact h3 {
+    color: var(--pink);
+}
+.contact h1 {
+    color: var(--white);
+    padding: 0.5rem 0.5rem;
+}
+.contact .row .form-container {
+    width: 50%;
+    padding-right: 5rem;
+}
+.contact .row .form-container input,textarea{
+    background: var(--white);
+    color: var(--pink);
+    font-size: 1.7rem;
+    width : 100%;
+    height: 4rem;
+    margin: 1rem  ;
+    padding: 0 3.8rem;
+    border-radius: 21rem;
+}
+.contact .row .form-container textarea {
+    border-radius: 1rem;
+    height: 20rem;
+    resize: none;
+}
+.contact .row .form-container input[type='submit']{
+    background: var(--pink);
+    color: var(--white);
+   max-width : 17.5rem;
+    height: 4rem;
+    cursor: pointer;
+    font-size: 2rem;
+    padding: .5rem .1rem;
+}
+.contact .row .form-container input[type='submit']:hover{
+    color: var(--pink);
+    background: none;
+    border: solid .2rem var(--pink);
+}
+
+@media screen and (max-width: 768px){
+    .contact .row{
+        flex-flow: column;        
+    }
+    .contact .row .image img{
+        width: 90vw;
+        height: 40vh;
+    }
+}
