@@ -80,6 +80,7 @@ header .navbar ul li{
 header .navbar ul li a{
     justify-content: space-between;
     font-size: 1.9rem;
+    color: var(--violet)
 }
 
 header .navbar ul li a:hover{
@@ -136,7 +137,7 @@ header .fa-times {
     display:flex;
     align-items: center;
     flex-flow: column;
-    padding-top:17rem;
+    padding-top:19rem;
     padding: bottom 1px;
 }
 .home-section .content h1 {
@@ -233,7 +234,7 @@ header .fa-times {
     left:50%;bottom: -25%;
     transform: translateX(-50%);
     border-radius: 50%;
-    border-top: 80vh solid var(--white);
+    border-top: 70vh solid var(--white);
     z-index: -1;
 }
 .formation .box-container {
@@ -248,6 +249,7 @@ header .fa-times {
     padding-top: 6rem;
     margin-top: 4rem;
     padding: 0 1rem;
+    padding-bottom: 1.5rem;
     text-align: center;
     letter-spacing: .2rem;
     font-weight: bold;
@@ -260,7 +262,12 @@ header .fa-times {
     font-weight: 400; 
     
 }
-
+.about .heading {
+    margin-bottom: 5rem;
+} 
+.about .title {
+    padding: 2rem;
+}
 .about .row {
     display: flex;
     justify-content: center;
@@ -273,9 +280,13 @@ header .fa-times {
     width: 70vw;
     height: 40vh;
 }
+
 .about .content h3 {
     color: var(--black);
     font-size: 3rem;
+    padding: .5rem 1rem;
+    padding-bottom: .5rem;
+    font-size: large;
 }
 .about .content p {
     color: #999;
@@ -493,7 +504,7 @@ footer .credit span,a{
         flex-flow: column;
     }
     header .navbar ul li a{
-        font-size: 3rem;
+        font-size: 4rem;
         text-align: center;
         width: 100%;
         margin: 1rem 0;
@@ -505,10 +516,20 @@ footer .credit span,a{
         top: 5.5rem;
         opacity: 1;
     }
+    .heading {
+        font-size: large;
+    }
+    .title {
+        font-size: medium;
+    }
 
     /* RESPONSIVE DE LA SECTION ACCEUIL */
+    .home-section .content h1 {
+        font-size: x-large;
+    }
     .home-section .content p {
-        padding: 1.5rem 2rem;
+        padding: 1.5rem .9rem;
+        font-size : medium;
     }
     .home-section::before {
         display: none;
@@ -521,7 +542,7 @@ footer .credit span,a{
         height :20vh;
     }
     .about .content {
-        padding: 2.5rem
+        padding: .5rem;
     }
     .formateur .card img {
         height : 26.9vh;
