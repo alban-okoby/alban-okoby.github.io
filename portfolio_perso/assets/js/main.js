@@ -7,7 +7,26 @@ $(document).ready(function() {
     });
 
     $(window).on('scroll load', function() {
-        $('menuIcon').removeClass('fa-times');
+        $('#menuIcon').removeClass('fa-times');
         $('header').removeClass('toggle');
-    })
-})
+    });
+
+    // Script de ralentissement
+        $("a").on('click', function(event) {
+      
+          if (this.hash !== "") {
+            event.preventDefault();
+           
+            let hash = this.hash;
+      
+            $('html, body').animate({
+              scrollTop: $(hash).offset().top
+            }, 
+            700, 
+            function(){
+      
+              window.location.hash = hash;
+            });
+          } 
+        });
+});
