@@ -1,6 +1,6 @@
 #Alban Okoby
 
-Developpeur Web, passioné de nouvelles approches numériques, je suis Etudiant bidouilleur en numérique et technologies doté d'un Bac+3 dans ce domaine.
+Developpeur Web, passioné de nouvelles approches numériques, je suis Etudiant bidouilleur en numérique et technologies.
 
 "Une ligne de code pour un monde encore plus meilleur !"
 
