@@ -9,6 +9,13 @@ $(document).ready(function() {
     $(window).on('scroll load', function() {
         $('#menuIcon').removeClass('fa-times');
         $('header').removeClass('toggle');
+
+        // Scrool Top
+        if ($(window).scrollTop() > 630) {
+          $('.scroll_top').show();
+        }else{
+          $('.scroll_top').hide();
+        }
     });
 
     // Script de ralentissement

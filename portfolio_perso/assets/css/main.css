@@ -119,10 +119,10 @@ section{
     align-items: center;
     flex-flow: column
 }
-.home h2,h2, h3, p, button {
+.home h1,h2,h2, h3, p, button {
     color: var(--white);
 }
-.home h2{
+.home h1{
     font-size: 3rem;
 }
 .home h3{
@@ -311,6 +311,26 @@ section{
     font-weight: 500;
     padding: .1rem .5rem;
     letter-spacing: .5rem;
+}
+
+/* scroll Top style */
+.scroll_top{
+    /* background: var(--yellow); */
+    position: fixed;
+    bottom: 5.5rem; right: 2.5rem;
+    z-index: 100;
+    border-radius: 3.5rem;
+    padding: 1rem 1.9rem;
+    letter-spacing: .5rem;
+    font-size: 2rem;
+    text-align: center;
+    display: none;
+}
+.scroll_top i{
+    color: var(--black);
+    background-color: var(--yellow);
+    border-radius: 3.5rem;
+    font-size: 5rem;
 }
 
 /* End porfolio style section */
