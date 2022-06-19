@@ -25,12 +25,13 @@ Developpeur Web, passioné de nouvelles approches numériques, je suis Etudiant 
 <a href="https://github.com/alban-okoby/birthday">
   <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=alban-okoby&repo=birthday" />
 </a>
-<a href="https://github.com/alban-okoby/reactNative">
-  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=alban-okoby&repo=reactNative&theme=dark" />
+<a href="https://github.com/alban-okoby/e-cv">
+  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=alban-okoby&repo=e-cv&theme=dark" />
 </a>
 
 M'envoyer un mail à unmailjuste@gmail.com 
-ou sur WhatSapp
+ou sur WhatsApp
 https://wa.me/message/MQN56H3G3WE5M1
+
 
 Aller contact-moi si t'as un projet ou de nouvelles idées, j'adore relever des défis, pas toi ?? Je crois fortement qu'on apprend pas en regardant les autres coder, il faut s'y mettre et toute suite !
