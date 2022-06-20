@@ -6,6 +6,9 @@ Developpeur Web, passioné de nouvelles approches numériques, je suis de base E
 
 "Une ligne de code pour un monde encore plus meilleur !"
 
+## Voir mon portfolio ?
+<a href="https://github.com/alban-okoby/alban-okoby.github.io/tree/main/portfolio_perso"> Mon Portfolio </a>
+
 <a href="https://github.com/alban-okoby/alban-okoby">
   <img align="center" src="https://github-readme-stats.vercel.app/api?username=alban-okoby&theme=highcontrast&show_icons=true&count_private=true&show_owner=true" />
 </a>
