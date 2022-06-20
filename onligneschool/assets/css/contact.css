@@ -7,6 +7,7 @@
 .contact {
     background: var(--contact);
     margin-top: 17rem;
+    padding: 1rem 2rem;
     position: relative;
 }
 .contact .row{
@@ -18,7 +19,8 @@
 }
 .contact .row .image img{
     width: 50vw;
-    height: 35vh;
+    height: 55vh;
+    border-radius: 1rem;
 }
 .contact h3 {
     color: var(--pink);

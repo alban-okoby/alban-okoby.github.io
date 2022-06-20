@@ -35,6 +35,7 @@ html {
 body {
     background-color: var(--body);
 }
+
 /* SECTION d'ACCUEIL (premier visuel) */
 #block-accueil {
     padding-bottom: 0;
@@ -154,7 +155,7 @@ header .fa-times {
     padding: 0 24rem;
 }
 
-.home-section button {
+.btn {
     background-color: var(--pink);
     color: var(--white);
     border-radius: 4rem;
@@ -169,9 +170,11 @@ header .fa-times {
     width: 17rem;
     height: 5rem;
 }
-.home-section button:hover {
-    letter-spacing: 0.4rem;
+.btn:hover {
     transition: .3s;
+    /* color: var(--pink); */
+    background: #333;
+    border: solid .3rem var(--pink);
 }
 .box-container {
     display:flex;
@@ -208,10 +211,7 @@ header .fa-times {
     font-size: 2rem;
     transition: .3s;
 }
-/* .box-container .box:hover h1{
-    color: var(--orange);
-    transition: .2s;
-} */
+
 .home-section .box-container .box:hover i{
     color: var(--green);
     transition: .2s;
@@ -242,11 +242,10 @@ header .fa-times {
 }
 /* FIN DE SECTION D'ACCUEIL' */
 
-/* STYLE A PROPOS  */
+/* STYLE ABOUT  */
 .heading {
     color: var(--violet2);
-    font-size: 4rem;
-    padding-top: 6rem;
+    font-size: 5rem;
     margin-top: 4rem;
     padding: 0 1rem;
     padding-bottom: 1.5rem;
@@ -257,13 +256,17 @@ header .fa-times {
 .title {
     color: var(--gray);
     padding: 0 1rem;
-    font-size: 2rem;
+    font-size: 2.7rem;
     text-align: center;
     font-weight: 400; 
     
 }
+.about {
+    padding: .3rem 1rem;
+}
 .about .heading {
-    margin-bottom: 5rem;
+    margin-top: 5rem;
+    margin-bottom: 1rem;
 } 
 .about .title {
     padding: 2rem;
@@ -278,7 +281,8 @@ header .fa-times {
 }
 .about .row img {
     width: 70vw;
-    height: 40vh;
+    height: 60vh;
+    border-radius: 1rem;
 }
 
 .about .content h3 {
@@ -292,20 +296,6 @@ header .fa-times {
     color: #999;
     font-size: 1.6rem;
     padding: 0 1rem;
-}
-.about .content button {
-    background-color: var(--pink);
-    color: var(--white);
-    height : 3.5rem;
-    width : 15rem;
-    font-size: 2rem;
-    border-radius: 5rem;
-    border: none;
-    box-shadow: 0 .3rem 1rem rgb(0, 0, 0, .3);
-    cursor: pointer;
-    transition: .2s;
-    margin-top: .9rem;
-
 }
 /* FIN DE STYLE A PROPOS  */
 
@@ -454,8 +444,18 @@ footer .credit span,a{
 }
 /* STYLE DE LA SECTION FOOTER */
 
-@media screen and (min-width: 870px) {
+@media screen and (min-width: 870px) and (max-width: 1024px) {
     
+    .home-section::before {
+        width: 120%;
+        content: '';
+        position: absolute;
+        left:50%;bottom: -25%;
+        transform: translateX(-50%);
+        border-radius: 50%;
+        border-top: 60vh solid var(--white);
+        z-index: -1;
+    }
     .home-section {
         margin-bottom: -11rem;
         box-shadow: 0 .3rem .5rem rgba(0, 0, 0, .3);
@@ -463,18 +463,19 @@ footer .credit span,a{
     .about {
         position: relative;
         padding: 3rem 2rem;
-        margin-top: -14rem;
+        margin-top: 5rem;
     }
-    .about .image img {
+   
+    /* .about .image img {
         min-height: 30vh;
-    }
+    } */
 }
 @media screen and (min-width: 769px) and (max-width: 850px) {
     .about {
         position: relative;
         padding: 3rem 2rem;
         margin-top: -28em;
-        margin-top: -8rem;
+        margin-top: -6rem;
 
     }
   }
@@ -517,10 +518,11 @@ footer .credit span,a{
         opacity: 1;
     }
     .heading {
-        font-size: large;
+        font-size: 3rem;
+        margin-bottom: 0;
     }
     .title {
-        font-size: medium;
+        font-size: large;
     }
 
     /* RESPONSIVE DE LA SECTION ACCEUIL */
@@ -529,7 +531,7 @@ footer .credit span,a{
     }
     .home-section .content p {
         padding: 1.5rem .9rem;
-        font-size : medium;
+        font-size : large;
     }
     .home-section::before {
         display: none;
@@ -538,8 +540,10 @@ footer .credit span,a{
         flex-flow: column-reverse;
     }
     .about .image img { 
-        width :90vw;
-        height :20vh;
+        /* width :90vw; */
+        /* height :20vh; */
+        width: 100%;
+        height: auto;
     }
     .about .content {
         padding: .5rem;
