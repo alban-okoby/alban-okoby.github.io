@@ -372,6 +372,7 @@ ul.social li a {
     border-radius: 6px;
     top: 0;
     position: relative;
+    text-decoration: none;
 }
 
 ul.social li a:before {
