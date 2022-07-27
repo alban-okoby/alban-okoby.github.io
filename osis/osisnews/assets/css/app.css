@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;1,400&display=swap');
+
+/* Customize styles  */
+@import './navbar.css';
+@import './lastnew.css';
+@import './footer.css';
+
+/* Page colors */
+:root {
+    --firstColorHue: 49;
+    --secondColorHue: 89%;
+    --thirdColorHue: 34%;
+
+    --firstBackgroundHue: 252;
+    --secondBackgroundHue: 30%;
+    --thirdBackgroundHue: 92%;
+
+    --white: hsl(252, 30%, 100%);
+    --light: hsl(var(--firstBackgroundHue), var(--secondBackgroundHue), var(--thirdBackgroundHue));
+    --primary: hsl(252, 75%, 60%);
+    --info: hsl(280, 49%, 42%);
+    --secondary: hsl(252, 60%, 65%);
+    --danger: hsl(352, 81%, 50%);
+    --success: hsl(120, 95%, 65%);
+    --gray: hsl(252, 15%, 65%);
+    --dark: hsl(252, 30%, 17%);
+    --black: hsl(252, 30%, 10%);
+    --black-50: rgba(0,0,0,0.5);
+    --main:hsl(var(--firstColorHue), var(--secondColorHue), var(--thirdColorHue));
+    --main-40: hsla(48, 88%, 48%, 0.4);
+    --main-50:hsla(49, 100%, 27%, 0.5);
+    --main-60: hsl(49, 85%, 30%);
+    --gradient-main: linear-gradient(to left, #cfb645, hsl(49, 100%, 27%), #cfb645, #cfb645, #cfb645, hsl(49, 100%, 30%));
+    --theme:rgb(255, 255, 255, .5);
+    /* --accueil : #660746; */
+    --sectionTitle: black;
+
+
+    --sticky-top-left: 5.7rem;
+    --sticky-top-right: 5.7rem;
+
+    --btn-padding: .6rem 2rem;
+    --border-radius: 2rem;
+    --card-padding: .7rem .9rem;
+    --card-radius: 1rem;
+    --search-padding: .4rem 1rem;
+
+    --leftComponentWidth: 2rem;
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;}
+
+*, 
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+    background-origin: border-box;
+}
+
+/* GENERAL STYLE */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: var(--light);
+    color: var(--dark);
+    overflow-x: hidden;
+}
+
+.search_bar {
+    background: hsl(252, 30%, 93%);
+    padding: var(--search-padding);
+    border-radius: var(--border-radius);
+}
+.search_bar input[type="search"] {
+    background:  hsl(252, 30%, 93%);
+    color: var(--dark);
+    width: 30vw;
+    padding: .6rem 1rem;
+    margin-left: 1rem;
+    font-size: .9rem;
+    overflow: hidden;
+
+}
+.search_bar input[type="search"]::placeholder {
+    color: var(--gray);
+}
+
+/* .btn {
+    display: inline-block;
+    padding: var(--btn-padding);
+    cursor: pointer;
+    font-size: .9rem;
+    font-weight: 500;
+    border-radius: var(--border-radius);
+    transition: all .3s ease;
+    color: var(--white);
+}
+
+.btn:hover {
+    opacity: .8;
+    color: var(--white);
+    transition: .3s;
+    background: #333;
+    border: solid .3rem var(--main);
+} */
+.btn-main {
+    background: var(--main);
+    color: white;
+}
+/* .btn-primary {
+    background: var(--primary);
+} */
+.btn-secondary {
+    background: var(--secondary);
+}
+.btn-danger {
+    background: var(--danger);
+}
+/* .btn-info {
+    background: var(--info);
+} */
+.btn-success {
+    background: var(--success);
+}
+.btn-dark{
+    background: var(--dark);
+}
+.btn-light {
+    background: var(--light);
+}
+.btn-gray {
+    background: var(--gray);
+}
+.btn-black {
+    background: var(--black);
+}
+.text_bold {
+    font-weight: 600;
+    font-style: normal;
+}
+.text_muted {
+    color: var(--gray);
+}
+
+*::selection {
+    background-color:var(--main);
+    color: var(--white);
+}
+html {
+    overflow-x: hidden;
+    font-size: 62.5%;
+}
+
+/* STYLE ABOUT  */
+.heading {
+    color: var(--black);
+    font-size: 3rem;
+    margin-top: 4rem;
+    padding: 0 1rem;
+    padding-bottom: 1.5rem;
+    text-align: center;
+    letter-spacing: .2rem;
+    font-weight: bold;
+}
+.title {
+    color: var(--dark);
+    padding: 0 1rem;
+    font-size: 2.7rem;
+    text-align: center;
+    font-weight: 400; 
+    
+}
+@media screen and (max-width: 992px) {
+    html {
+        font-size: 79%;
+    }
+    .container {
+        width: 100%;  
+    }
+    .container .left {
+        width: 5rem;
+        margin-right: .3rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    html {
+        font-size: 65.3%;
+    }
+    html {
+        font-size: 55%;
+    }
+    #block-accueil {
+        min-height: 40vh;
+    }
+
+    .heading {
+        font-size: 3rem;
+        margin-bottom: 0;
+    }
+    .title {
+        font-size: large;
+    }
+
+    /* RESPONSIVE HOME SECTION */
+    .home-section .content h1 {
+        font-size: x-large;
+    }
+    .home-section .content p {
+        padding: 1.5rem .9rem;
+        font-size : large;
+    }
+    .home-section::before {
+        display: none;
+    }
+    .about .row {
+        flex-flow: column-reverse;
+    }
+    .about .image img { 
+        /* width :90vw; */
+        /* height :20vh; */
+        width: 100%;
+        height: auto;
+    }
+    .about .content {
+        padding: .5rem;
+    }
+ 
+}

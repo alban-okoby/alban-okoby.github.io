@@ -1,0 +1,36 @@
+/* STYLE DE LA SECTION FOOTER */
+footer {
+    margin-top: 15rem;
+    text-align: center;
+    padding-bottom: 6rem;
+}
+footer .icons {
+    padding: 3rem 0;
+}
+footer a {
+
+    text-decoration: none;
+}
+footer .icons a {
+    color: var(--main);
+    /* background: var(--pink); */
+    border: solid .2rem var(--main-50);
+    height: 4.5rem;
+    width: 4.5rem;
+    line-height: 4.5rem;
+    border-radius: 50%;
+    font-size: 2.5rem;  
+    margin: 0 1rem;
+    transition: 200ms linear;
+}
+footer .icons a:hover {
+    background: var(--main);
+    color: var(--white);
+}
+footer .credit{
+    font-size:x-large;
+}
+footer .credit span,a{
+    color: var(--main);
+}
+/* STYLE DE LA SECTION FOOTER */
