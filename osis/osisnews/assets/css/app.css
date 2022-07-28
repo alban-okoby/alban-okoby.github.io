@@ -4,6 +4,7 @@
 /* Customize styles  */
 @import './navbar.css';
 @import './lastnew.css';
+@import './categories.css';
 @import './footer.css';
 
 /* Page colors */
@@ -19,7 +20,6 @@
     --white: hsl(252, 30%, 100%);
     --light: hsl(var(--firstBackgroundHue), var(--secondBackgroundHue), var(--thirdBackgroundHue));
     --primary: hsl(252, 75%, 60%);
-    --info: hsl(280, 49%, 42%);
     --secondary: hsl(252, 60%, 65%);
     --danger: hsl(352, 81%, 50%);
     --success: hsl(120, 95%, 65%);
@@ -91,41 +91,21 @@ body {
 .search_bar input[type="search"]::placeholder {
     color: var(--gray);
 }
-
-/* .btn {
-    display: inline-block;
-    padding: var(--btn-padding);
-    cursor: pointer;
-    font-size: .9rem;
-    font-weight: 500;
-    border-radius: var(--border-radius);
-    transition: all .3s ease;
-    color: var(--white);
+.active {
+    color: var(--main)
 }
-
-.btn:hover {
-    opacity: .8;
-    color: var(--white);
-    transition: .3s;
-    background: #333;
-    border: solid .3rem var(--main);
-} */
 .btn-main {
     background: var(--main);
     color: white;
 }
-/* .btn-primary {
-    background: var(--primary);
-} */
+
 .btn-secondary {
     background: var(--secondary);
 }
 .btn-danger {
     background: var(--danger);
 }
-/* .btn-info {
-    background: var(--info);
-} */
+
 .btn-success {
     background: var(--success);
 }
@@ -177,6 +157,46 @@ html {
     font-weight: 400; 
     
 }
+.more-visited {
+    background: var(--black);
+    color: var(--white);
+    font-weight: 700;
+    padding: .5rem 3rem;
+    text-align: center;
+    border-top-right-radius: 5rem;
+    border-bottom-right-radius: 5rem;
+    width: 21rem;
+}
+.box-right .box {
+    background: var(--white);
+    margin-bottom: 1rem;
+    padding: .5rem 0;
+    box-shadow: 0 0 .4rem gray;
+    border-radius: var(--card-radius);
+    display: flex;
+}
+.box-right .box img{
+    min-height: 13rem;
+}
+
+.box-link{
+    text-decoration: none;
+    color: var(--black);
+    opacity: .9;
+}
+.box-link:hover {
+    text-decoration: none;
+    overflow:hidden;
+    color: var(--black);
+    opacity: 1;
+    transition: .2s;
+}
+
+.box-link .detail {
+    padding: .5rem 1.5rem;
+    align-self: flex-end;
+}
+
 @media screen and (max-width: 992px) {
     html {
         font-size: 79%;
