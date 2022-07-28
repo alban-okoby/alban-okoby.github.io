@@ -167,6 +167,10 @@ html {
     border-bottom-right-radius: 5rem;
     width: 21rem;
 }
+a {
+    text-decoration: none;
+    color: var(--black);
+}
 .box-right .box {
     background: var(--white);
     margin-bottom: 1rem;
@@ -194,7 +198,9 @@ html {
 
 .box-link .detail {
     padding: .5rem 1.5rem;
-    align-self: flex-end;
+    align-self: flex-start;
+    margin-top: -.7rem;
+    position: absolute;
 }
 
 @media screen and (max-width: 992px) {

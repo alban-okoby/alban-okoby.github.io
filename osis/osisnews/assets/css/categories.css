@@ -3,3 +3,42 @@
     background: light;
 }
 
+.categories .nav-link {
+    color: var(--black);
+    font-size: 1.8rem;
+}
+.categories .nav-link .active {
+    background: var(--main);
+}
+
+.categories .box img {
+    max-height: 11rem;
+    width: 100%;
+    /* margin-left: -.67rem; */
+}
+.categories .box-link .detail {
+    margin-left: -4rem;
+    padding: .7rem 1rem;
+    transition: 500ms;
+}
+.categories .box-link:hover img{
+    filter: grayscale(90%);
+    transition: 500ms;
+}
+@media screen and (min-width: 1024px){
+
+    .categories .paragraph {
+    display: none;
+    transform: scale(0);
+    transition: .5s;
+    /* visibility: hidden; */
+    }
+    .categories .card:hover {
+        cursor: pointer;
+    }
+    .categories .card:hover .paragraph {
+        display: block;
+        transform: scale(1);
+        transition: .5s;
+        transform-duration: .5s;
+    }
