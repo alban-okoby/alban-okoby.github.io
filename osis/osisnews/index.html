@@ -30,10 +30,9 @@
         <nav class="navbar">
             <ul>
                 <li><a href="#home-section" class="active" >Accueil</a></li>
+                <li><a href="#categories">Actualités </a></li>
                 <li><a href="#about">About </a></li>
-                <li><a href="#actualites">Actualités </a></li>
                 <li><a href="#blog">Blog </a></li>
-                <li><a href="#categories">catégories </a></li>
                 <li><a href="page/contact.html">Contact</a></li>
             </ul>
         </nav>
@@ -45,7 +44,7 @@
         <div class="row col-lg-7 col-md-7 col-sm-12" style="margin-right:.2rem">
             <div class="box-left">
                 <h1 class="heading">Le jour de code n'est pas le code du jour lors d'un séjour </h1>
-
+                
                 <div class="box-img">
                     <img src="./assets/image/15.jpg" alt="" class="align-self-center">
                 </div>
@@ -56,6 +55,7 @@
                 <h3 class="title">Ce qui a été évoqué au lieu d'etre invoqué</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat iusto magni vel consectetur totam error nihil ipsam, adipisci obcaecati praesentium temporibus eius. Laboriosam libero odit architecto cum. Tenetur, cumque vitae. 
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam inventore culpa reiciendis impedit dolor cum consectetur, minima, nesciunt maxime dolorem aspernatur doloribus esse, laudantium dolores aut eveniet quibusdam! Culpa blanditiis, quasi magnam debitis non consequuntur, labore corrupti suscipit eligendi quo animi doloremque natus rem nulla dolor voluptatum molestiae facilis similique.
+                    <i id="categories"></i>
                 </p>
             </div>
         </div>
@@ -114,7 +114,7 @@
     </article>
     
     <!-- this is categories section -->
-    <article class="categories" id="categories">
+    <article class="categories">
         <div>
             <h3 class="more-visited align-center">Catégories</h3>
             <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
@@ -378,7 +378,7 @@
                             <a href="#" class="box-link ">
                                 <div class="box row col-12"> 
                                     <div class="col-5">
-                                        <img src="./assets/image/10.jpg" alt="" class="img-fluid">
+                                        <img src="./assets/image/10.jpg" alt="" class="img-fluid img-thumbnail">
                                     </div>
                                     <div class="col-7">
                                         <h3 class="text-bold">titre de l'article, pour le fun, c'est pas top</h3>
@@ -410,10 +410,67 @@
             </div>
         </div>
     </article>
+    <!-- ABOUT SECTION -->
+    <section class="about">
+        <h3 class="more-visited align-center">A propos de nous</h3>
+        
+        <aside class="row">
+            <div class="left col-md-6">
+                <div class=" p-3 p-md-5 m-md-3 text-center bg-light">
+                    <div class="col-md-5 p-lg-5 mx-auto my-5">
+                        <h1 class="display-4 fw-normal">Osis News </h1>
+                        <p class="lead fw-normal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo iusto vitae optio omnis. Vero, provident. Laborum, voluptates! Veniam adipisci esse qui aut sequi, nam, illo, necessitatibus voluptatem nulla animi harum..</p>
+                    <a class="btn btn-outline-secondary" href="#">restez en contact</a>
+                </div>
+            </div>
+            </div>
+            <!-- About Carousel-->
+            <div class="right col-md-6">
+                <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel" style="margin-top: 1rem">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="10000">
+                        <img src="./assets/image/16.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Un équipe dynamique sur pour l'actualités </h5>
+                            <p>Some representative placeholder content for the first slide.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="./assets/image/15.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Second slide label</h5>
+                            <p>Some representative placeholder content for the second slide.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/image/14.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Third slide label</h5>
+                            <p>Some representative placeholder content for the third slide.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </aside>
+    </section>
+    <!--END ABOUT SECTION -->
 </section>
-    
 
-<!-- BLOC FOOTER -->
+
+    <!-- BLOC FOOTER -->
     <footer>
         <hr>
         <div class="icons">

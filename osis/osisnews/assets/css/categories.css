@@ -10,11 +10,18 @@
 .categories .nav-link .active {
     background: var(--main);
 }
-
+.categories .card {
+    margin: .7rem;
+    border-radius: var(--card-radius);
+    border-left: .3rem solid var(--main);
+    box-shadow: 0 0 .5rem light;
+}
 .categories .box img {
+    height: auto;
+    min-height: 11rem;
     max-height: 11rem;
     width: 100%;
-    /* margin-left: -.67rem; */
+    border-radius: var(--card-radius);
 }
 .categories .box-link .detail {
     margin-left: -4rem;
@@ -23,7 +30,7 @@
 }
 .categories .box-link:hover img{
     filter: grayscale(90%);
-    transition: 500ms;
+    transition: 400ms;
 }
 @media screen and (min-width: 1024px){
 
@@ -31,7 +38,6 @@
     display: none;
     transform: scale(0);
     transition: .5s;
-    /* visibility: hidden; */
     }
     .categories .card:hover {
         cursor: pointer;
