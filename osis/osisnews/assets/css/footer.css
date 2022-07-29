@@ -30,7 +30,15 @@ footer .icons a:hover {
 footer .credit{
     font-size:x-large;
 }
-footer .credit span,a{
-    color: var(--main);
+footer .credit .heath {
+    color: #f50057;
+}
+footer .credit span, 
+footer .credit a{
+    color: linear-gradient(#f50057, var(--main));
+}
+footer .footer-logo {
+    width: 3rem;
+    height: 3rem;
 }
 /* STYLE DE LA SECTION FOOTER */

@@ -54,7 +54,8 @@ header .navbar ul li a:hover{
 header .logo img {
     border-radius: 1.9rem;
     float: left;
-    margin-top: -.4rem;
+    width: 2.8rem;
+    height: 2.8rem;
 }
 header .logo i {
     color: var(--dark);
@@ -99,7 +100,7 @@ header .fa-times {
         padding: 2rem 0;
         flex-flow: column;
         text-align: center;
-        margin-left: 37%;
+        margin-left: 32%;
 
     }
     header .navbar ul li a{
