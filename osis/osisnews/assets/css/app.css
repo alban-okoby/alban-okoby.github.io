@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;1,400&display=swap');
 
-/* Customize styles  */
+/* Customize component styles  */
 @import './navbar.css';
 @import './lastnew.css';
 @import './categories.css';
@@ -139,7 +139,7 @@ html {
     font-size: 62.5%;
 }
 
-/* STYLE ABOUT  */
+/* SAME STYLE  */
 .heading {
     color: var(--black);
     font-size: 3rem;
@@ -172,6 +172,43 @@ a {
     text-decoration: none;
     color: var(--black);
 }
+
+.author {
+    font-weight: 550;
+    font-size: 1rem;
+}
+.tags {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    /* position: absolute; */
+    margin-top: .5rem;
+}
+.tag {
+    font-weight: 550;
+    font-size: 1rem;
+    background: var(--main);
+    color: var(--light);
+    border-radius: var(--card-radius);
+    padding: .2rem .5rem;
+}
+
+/* responsibility when screen < 1024px  */
+@media screen and (min-width: 1024px) {
+
+     .tags {
+        /* visibility: hidden; */
+        transform: scale(0);
+        transition: 100ms ease-in-out;
+
+    }
+    .box-link:hover .tags {
+        /* visibility: visible; */
+        transform: scale(1);
+        transition: 300ms ease-in-out;
+    }
+
+}
 .box-right .box {
     background: var(--white);
     margin-bottom: 1rem;
@@ -187,14 +224,17 @@ a {
 .box-link{
     text-decoration: none;
     color: var(--black);
-    opacity: .9;
 }
 .box-link:hover {
     text-decoration: none;
     overflow:hidden;
     color: var(--black);
-    opacity: 1;
     transition: .2s;
+    opacity: 1;
+}
+.box-link:hover img {
+    filter: grayscale(.9);
+    opacity: .8;
 }
 
 .box-link .detail {

@@ -1,0 +1,9 @@
+@import './app.css';
+
+.logo {
+    color: var(--dark);
+}
+
+.logo:hover {
+    color: var(--main);
+}

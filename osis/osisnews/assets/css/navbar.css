@@ -48,7 +48,7 @@ header .navbar ul li a:hover{
 }
 .navbar ul .active,
 .navbar a:hover{
-    color: var(--pink);
+    color: var(--main);
 }
 
 header .logo img {
@@ -57,7 +57,7 @@ header .logo img {
     margin-top: -.4rem;
 }
 header .logo i {
-    color: var(--violet);
+    color: var(--dark);
     margin-top: 7px;
     font-style: normal;
     font-size: 2.2rem;
@@ -66,7 +66,7 @@ header .logo i {
 }
 
 header .fa-bars {
-    color: var(--pink);
+    color: var(--main);
     font-size: 3rem;
     cursor: pointer;
     display: none;
@@ -75,7 +75,7 @@ header .fa-bars {
 }
 
 header .fa-times {
-    color: var(--pink);
+    color: var(--main);
     transform: rotate(180deg);
     transition: .4s ease-out;
 } 
@@ -98,6 +98,9 @@ header .fa-times {
     header .navbar ul{
         padding: 2rem 0;
         flex-flow: column;
+        text-align: center;
+        margin-left: 37%;
+
     }
     header .navbar ul li a{
         font-size: 4rem;

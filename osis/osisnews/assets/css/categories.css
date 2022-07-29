@@ -13,13 +13,14 @@
 .categories .card {
     margin: .7rem;
     border-radius: var(--card-radius);
-    border-left: .3rem solid var(--main);
+    /* border-left: .3rem solid var(--main); */
+    border-right: .3rem solid var(--main);
     box-shadow: 0 0 .5rem light;
 }
 .categories .box img {
     height: auto;
-    min-height: 11rem;
-    max-height: 11rem;
+    min-height: 14rem;
+    max-height: 14rem;
     width: 100%;
     border-radius: var(--card-radius);
 }

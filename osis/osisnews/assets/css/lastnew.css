@@ -19,6 +19,7 @@
 }
 .last-new .box-left .author {
     font-size: 1.7rem;
+    margib
 }
 .last-new .box-left p{
     font-size: 1.5rem;
@@ -42,4 +43,12 @@
     margin-top: 3rem;
 }
 
+.box-right img {
+    height: auto;
+    min-height: 13rem;
+    max-height: 13rem;
+    width: 100%;
+    border-radius: var(--card-radius);
+}
 
+    
