@@ -6,7 +6,7 @@
 
 .contact {
     background: var(--contact);
-    margin-top: 17rem;
+    margin-top: 7rem;
     padding: 1rem 2rem;
     position: relative;
 }
@@ -57,7 +57,7 @@
     font-size: 2rem;
     padding: .5rem .1rem;
 }
-.contact .row .form-container input[type='submit']:hover{
+.contact .row .form-container input[type='submit']:hover {
     color: var(--pink);
     background: none;
     border: solid .2rem var(--pink);

@@ -26,17 +26,56 @@
                 <i>OsisNews</i> <img src="../assets/image/logo.jpg" alt=""> 
             </a>
             
-        </div>
         <nav class="navbar">
             <ul>
+                <li>
+                    <span class="fa fa-user-circle user" onclick="document.getElementById('user').style.display='block'"></span>
+
+                </li>
                 <li><a href="../index.html#home-section" class="active" >Accueil</a></li>
-                <li><a href="#categories">Actualités </a></li>
-                <li><a href="#about">About </a></li>
-                <li><a href="page/contact.html">Contact</a></li>
+                <li><a href="../index.html#categories">Actualités </a></li>
+                <li><a href="./contact.html">Contact</a></li>
             </ul>
         </nav>
         <i class="fas fa-bars"></i>
     </header>
+
+      <!--Login Modal-->  
+    <div id="user" class="modal login-modal">
+
+        <form class="modal-content animate container" action="">
+            <div class="imgcontainer">
+                <span onclick="document.getElementById('user').style.display='none'" class="close" title="Close Modal">
+                    &times;</span>
+                <img src="../assets/image/img_profile.jpg" alt="Avatar" class="avatar">
+            </div>
+            <div class="container">
+                <label><b>Nom d'utilisateur</b></label>
+                <input type="text" placeholder="Votre nom d'utilisateur" required>
+
+
+                <label><b>Mot de passe </b></label>
+                <input type="password" placeholder="Entrer le mot de passe" required>
+                <div class="login">
+                    <button class="btn btn-main btn-login"> Se connecter</button>
+                </div>
+                <!-- <input type="checkbox" checked="checked">
+                Restez connecter -->
+            </div>
+
+            <div class="container" style="background-color:#f1f1f1">
+                <button type="button" onclick="document.getElementById('user').style.display='none'" class="cancelbtn">
+                    Annuler</button>
+                
+                <span class="psw">
+                    <a href="#">
+                        Mot de passe oublié ?
+                    </a>
+                </span>
+            </div>
+        </form>
+    </div>
+    
 <!-- End Header-->
 <section class="home-section container">
     <article class="row last-new" id="actualites">
@@ -130,7 +169,7 @@
                                 </div>
                             </div>
                             <span class="author">
-                                <span class="name">Cerveau Clus</span>  | <i class="date">publié le 26 juillet 2022</i> 
+                                <span class="name">Cerveau Clus</span>  | <i class="date">publié le 25 juillet 2022</i> 
                             </span> <br>
                             <div class="tags">
                                 <span class="tag"> #technologie </span>
@@ -158,6 +197,8 @@
             Developed with <span class="heath"> ❤ </span> by <a href="#"> <img src="../assets/image/logo.jpg" alt="" class="footer-logo"> Osisnews</a> | all right reserved.
         </div>
     </footer>
+
+    
 <!-- END FOOTER BLOC-->
 
     <!--  Boostrap script cdn -->
@@ -167,5 +208,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"> </script>
     <!-- Lien js personnalisés -->
     <script src="../assets/js/app.js"></script>
+    {# <script src="../assets/js/login.js"></script> #}
 </body>
 </html>

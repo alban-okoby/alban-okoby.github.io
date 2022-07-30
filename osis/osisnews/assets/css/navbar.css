@@ -26,6 +26,10 @@ header {
 header a {
     text-decoration: none;
 }
+header .navbar .user {
+    font-size: 2.7rem;
+    cursor: pointer;
+}
 header .navbar ul{
     margin: 0 1rem;
     display: flex;

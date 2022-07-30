@@ -3,6 +3,7 @@
 
 /* Customize component styles  */
 @import './navbar.css';
+@import './login.css';
 @import './lastnew.css';
 @import './categories.css';
 @import './about.css';
