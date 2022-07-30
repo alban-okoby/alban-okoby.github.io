@@ -71,7 +71,7 @@ header .logo i {
 }
 
 header .fa-bars {
-    color: var(--main);
+    color: var(--dark);
     font-size: 3rem;
     cursor: pointer;
     display: none;

@@ -10,7 +10,6 @@
     box-sizing: border-box;
 }
 
-
 .modal .cancelbtn {
     width: auto;
     padding: 12px 18px;
@@ -51,7 +50,6 @@
     background-color: #000;
     background-color: rgba(0,0,0,0.7);
     padding-top: 60px;
-    /* padding: 2rem 3rem; */
     margin: auto auto;
 }
 
@@ -120,12 +118,20 @@
     .cancelbtn {
        width: 100%;
     }
+    .login-modal .btn-login {
+        padding: 8px 16px;
+    }
 }
 
-@media screen and (min-width: 374px) and (max-width:425px) {
+@media screen and (min-width: 319px) and (max-width:425px) {
 
     .modal .btn-login {
         width: auto;
         margin-left: 0%;
+        padding: 8px 13px;
+        text-align: center;
+    }
+    .modal .modal-content {
+        width: 80%;
     }
 }
