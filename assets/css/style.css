@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+
+:root{
+   --white:#fff;
+   --black:#444;
+}
+
+*{
+   font-family: 'Rubik', sans-serif;
+   margin:0; padding:0;
+   box-sizing: border-box;
+   transition: .2s linear;
+}
+
+body.dark{
+   --white:#444;
+   --black:#fff;
+}
+
+.content{
+   height: 100vh;
+   width: 100%;
+   padding-bottom: 60px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-color: var(--white);
+}
+
+.content h1{
+   font-size: 7vw;
+   color:var(--black);
+}
+
+#toggle-btn{
+   height: 70px;
+   width: 70px;
+   line-height: 69px;
+   border-radius: 50%;
+   background-color: var(--black);
+   color:var(--white);
+   font-size: 30px;
+   cursor: pointer;
+   text-align: center;
+   position: fixed;
+   top:20px; right: 30px;
+}
+
+#toggle-btn.fa-moon{
+   transform: rotate(360deg);
+}

@@ -1,0 +1,600 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap'); 
+@import url('card.css');
+
+:root{
+    --white: #fff;
+    --black: #000;
+    --black-2 : #222;
+    --selection: #f9ca24;
+    --yellow: #ffca24;
+    --gray: #333;
+    --gray-2: #444;
+}
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0; padding: 0;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+    transition: all .25s linear;
+}
+::selection{
+    background: var(--selection);
+    color: var(--white);
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+html::-webkit-scrollbar{
+    width: 1.5rem;
+}
+html::-webkit-scrollbar-track{
+    background: var(--gray);
+}
+html::-webkit-scrollbar-thumb{
+    background: var(--yellow);
+}
+body{
+    background: var(--gray);
+    color(--white);
+    overflow-x: hidden;
+    margin-left: 35rem;
+}
+/*  When dark mode is active*/
+body.dark{
+    --white:#111;
+    --gray:#fff;
+    --gray-2: #999;
+    --black: #ccc;
+}
+body.dark #toggle-btn{
+    color: #fff;
+    background: linear-gradient(#111, #111, #f9ca24);
+
+}
+ body.dark .btn{
+    background-color: var(--yellow);
+    border: solid 1px var(--white);
+}
+body.dark .btn:hover {
+    color: var(--white);
+}
+body.dark header {
+    background: var(--black);
+}
+body.dark .about .counter .box{
+    background: var(--gray-2);
+}
+body.dark .portfolio .box-container .box p{
+    color: var(--white);
+}
+body.dark .scroll_top i {
+    background: var(--white);
+    color: var(--yellow);
+}
+/* STYLE DU HEADER */
+header{
+    background: var(--black-2);
+    color: var(--white);
+    position: fixed;
+    top: 0; left: 0; 
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content:center;
+    height: 100%; width: 33.7rem;
+    flex-flow: column;
+}
+header .utilisateur img{
+    border: solid .6rem var(--yellow);
+    height: 17rem; width:17rem;
+    border-radius: 50%;
+}
+header .utilisateur .nom{
+    font-size: 2.7rem;
+}
+header .utilisateur p{
+    font-size: 2.8rem;
+    font-family: 'Tangerine' ,sans-serif;
+}
+header .navbar{
+    width: 100%;
+}
+header .navbar ul{
+    list-style: none;
+    padding: 1rem 3rem;
+}
+header .navbar ul a{
+    color:var(--white);
+    background: var(--gray);
+    display: block;
+    font-size: 1.9rem;
+    border-radius: 5rem;
+    text-decoration: none;
+    padding: .8rem;
+    margin: 1.5rem 0;
+    font-family: 'Dancing Script', cur;
+  
+}
+
+#toggle-btn{
+    height: 50px;
+    width: 50px;
+    line-height: 43px;
+    border-radius: 50%;
+    background: linear-gradient(#111, #f9ca24, #f9ca24);
+    color:var(--white);
+    font-size: 22px;
+    cursor: pointer;
+    text-align: center;
+    position: fixed;
+    top:40%; right: 7px;
+    z-index: 9999;
+ }
+ 
+ #toggle-btn.fa-moon{
+    transform: rotate(360deg);
+ }
+
+header .navbar ul a:hover{
+    background: var(--yellow);
+    color: black;
+    font-weight: bold;
+}
+/* END HEADER */
+
+/* MENU ICON */
+#menuIcon{
+    color: var(--white); 
+    position: fixed;  
+    top:2rem; right:2rem;
+    background: var(--gray-2);
+    padding: 1.1rem 1.5rem;
+    z-index: 1000;
+    cursor: pointer;
+    display: none;
+    font-size: 1.9rem;
+    border-radius : 6px;
+}
+/* END MENU ICON */
+
+/* Style home */
+section{
+    min-height: 100vh;
+    padding: 1rem;
+}
+.home{
+    display: flex;
+    justify-content:center;
+    padding: 0 15rem;
+    align-items: center;
+    flex-flow: column
+}
+.home h1,h2,h2, h3, p, button {
+    color: var(--white);
+}
+.home h1{
+    font-size: 3rem;
+}
+.home h3{
+    font-size: 2.5rem;
+}
+.home p{
+    font-size: 2rem;
+    padding: 1rem 0;
+}
+
+ span{
+    color: var(--yellow);
+}
+.btn{
+    background-color: var(--gray-2);
+    color: var(--white);
+    padding: .6rem 1.1rem;
+    border: solid 1px var(--yellow);
+    border-radius: 5rem;
+    cursor: pointer;
+    margin-top: 2rem;
+    font-size: 2rem;
+}
+.btn:hover{
+    background-color: var(--yellow);
+    color: var(--black);
+    border: solid 1px var(--white);
+}
+.home .btn i{
+    font-size: 1.8rem;
+    padding: 0 .6rem;
+    color: var(--white);
+}
+.home .btn:hover i{
+    color: var(--gray);
+    transition: all .1s linear;
+}
+/* End Style home */
+
+/* Starts about style section */
+.heading{
+    font-size: 4rem;
+    margin: 0 .5rem;
+    padding: 1rem;
+    text-align: center;
+    border-bottom: solid .2rem #fff4;
+}
+.about .row {
+    padding: 1rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.about .row .info{
+    padding: 2rem 1rem;
+    padding-left: 6rem;
+    flex: 1 1 48rem;
+}
+
+.about .row .info h3{
+    font-size: 2rem;
+    color: var(--yellow);
+    padding: 1rem 0;
+    font-weight: normal;
+}
+.about .row h3 span{
+    font-size: 2rem;
+    color: var(--white);
+    padding: 1rem 0;
+    font-weight: normal;
+}
+.about .row .counter{
+    padding: 2rem 1rem;
+    display: flex;
+    justify-content: center;
+    flex: 1 1 48rem;
+    flex-wrap: wrap;
+}
+.about .row .counter .box{
+    background: var(--black-2);
+    width : 18rem;
+    border: .1rem dotted var(--yellow);
+    opacity: .9;
+    border-radius: 4rem 0 4rem 0;
+    text-align: center;
+    padding: 2rem;
+    margin: 1rem;
+}
+.about .row .counter .box span{
+    font-size: 4rem;
+}
+.about .row .counter .box h3{
+    font-size: 2rem;
+}
+
+
+/* End about style section */
+
+/*  Education style section */
+.education .box-container{
+    display : flex;
+    justify-content : space-between;
+    flex-wrap : wrap;
+    text-align : center;
+    padding : 1rem 0;
+    padding-left : 3rem;
+}
+.education .box-container .box{
+    width: 27rem;
+    height:4rem 1rem;
+    padding-left:2rem;
+    margin-bottom: 25rem;
+    border-left: solid .3rem var(--white);
+    position: relative;
+    margin: 2rem .1rem;
+}
+.education .box-container .box span{
+    color: var(--white);
+    background-color: var(--gray-2);
+    font-size: 1.1rem;
+    padding: 1.5rem 2.5rem;
+    border-radius: 5rem;
+}
+.education .box-container .box h3{
+    color: var(--white);
+    font-size: 2rem;
+    padding-top: 2.5rem;
+}
+.education .box-container .box p{
+    color: var(--white);
+    font-size: 1.4rem;
+    padding: 1rem 0;
+}
+.education .box-container .box i{
+    background-color: var(--yellow);
+    color: var(--gray-2);
+    position: absolute;
+    /* left: -2.5rem; top: -1.5rem; */
+    left: -2.3rem; top: -1.5rem;
+    width: 5rem; height: 5rem;
+    border-radius: 50%;
+    line-height: 5rem;
+    font-size: 2rem;
+}
+/*  End Education style section */
+
+/* porfolio style section */
+.portfolio .box-container{
+    display : flex;
+    justify-content : space-between;
+    flex-wrap : wrap;
+    text-align : center;
+    justify-content: center;
+    padding : 2rem 0;
+}
+.portfolio .box-container .box{
+    height: 22rem; width: 25rem;
+    overflow: hidden;
+    margin: 2rem 3rem;
+    border-radius: 3rem;
+    border-bottom: solid .3rem var(--white);
+    border-top: solid .3rem var(--yellow);
+    justify-content: center;
+    /* margin-left: 2rem; */
+}
+.portfolio .box img{
+    width: 100%; height: 100%;
+    object-fit: cover;
+    transform: scale(.81);
+    border-radius: 3rem;
+}
+.portfolio .box img:hover{
+    transform: scale(1);
+}
+.portfolio .box img:hover+p{
+    color: var(--black) !important;
+    transform: translate(6.5rem, -25rem);
+}
+.portfolio .box p{
+    color: var(--black);
+    background-color: var(--yellow);
+    border-radius: 3rem;
+    font-size: 1.8rem;
+    position: absolute;
+    text-align: center;
+    transform: translate(6.5rem, -23rem);
+    font-family: 'Dancing Script', cur;
+    font-weight: 500;
+    padding: .1rem .5rem;
+    letter-spacing: .5rem;
+}
+
+/* scroll Top style */
+.scroll_top{
+    /* background: var(--yellow); */
+    position: fixed;
+    bottom: 5.5rem; right: 2.5rem;
+    z-index: 100;
+    border-radius: 3.5rem;
+    padding: 1rem 1.9rem;
+    letter-spacing: .5rem;
+    font-size: 2rem;
+    text-align: center;
+    display: none;
+}
+.scroll_top i{
+    color: var(--black);
+    background-color: var(--yellow);
+    border-radius: 3.5rem;
+    font-size: 5rem;
+}
+
+
+/* End porfolio style section */
+
+
+/* FOOTER SECTION  */
+
+footer {
+    text-align: center;
+    padding: 12rem 1rem;
+}
+
+/* fooetr social  */
+ul.social {
+    cursor: default;
+    margin: 0;
+    list-style: none;
+    padding-left: 0;
+}
+ul.social {
+    padding: 1em 0.5em 0 0.5em;
+}
+ul.social li {
+    position: relative;
+    display: inline-block;
+    margin: 0.25em;
+    top: 0;
+    padding-left: 0;
+}
+
+ul.social li a {
+    -moz-transition: top .2s ease-in-out;
+    -webkit-transition: top .2s ease-in-out;
+    -ms-transition: top .2s ease-in-out;
+    transition: top .2s ease-in-out;
+    display: block;
+    width: 48px;
+    height: 48px;
+    border-radius: 6px;
+    top: 0;
+    position: relative;
+    text-decoration: none;
+}
+
+ul.social li a:before {
+    background-image: url("../images/other/bg.png"), -moz-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+    background-image: url("../image/other/bg.png"), -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+    background-image: url("../images/other/bg.png"), -ms-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+    background-image: url("../images/other/bg.png"), linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+    /* -moz-transition: background-color .2s ease-in-out;
+    -webkit-transition: background-color .2s ease-in-out;
+    -ms-transition: background-color .2s ease-in-out;
+    transition: background-color .2s ease-in-out; */
+    /* background-color: #444; */
+    border-radius: 6px;
+    box-shadow: inset 0px 0px 0px 1px #282828, inset 0px 2px 1px 0px rgba(255, 255, 255, 0.1);
+    color: #2E2E2E !important;
+    display: block;
+    font-size: 26px;
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+    outline: 0;
+    overflow: hidden;
+    text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.1);
+    width: 48px;
+}
+
+ul.social li a.fa-twitter {
+    background-color: #2DAAE4;
+}
+
+ul.social li a.fa-facebook-f {
+    background-color: #3C5A98;
+}
+ul.social li a.fa-whatsapp {
+    background-color: rgb(95, 252, 113);
+}
+
+ul.social li a.fa-linkedin-in {
+    background-color: #0072B1;
+}
+
+ul.social li a.fa-github {
+    background-color: #FAFAFA;
+}
+
+ul.social li a.fa-instagram {
+    background-color: #E0D7C8;
+}
+
+ul.social li a.fa-youtube {
+    background-color: #BF2E25;
+}
+
+ul.social li a.fa-blogger {
+    background-color: #FF6501;
+}
+
+ul.social li a:hover {
+    top: -5px;
+}
+
+ul.social li a:before {
+    background-color: transparent !important;
+}
+/* ul.social li a:hover:before {
+    background-color: transparent;
+} */
+
+/* Media Queries */
+@media screen and (max-width: 1200px) {
+    html{
+        font: 65%;
+    }
+    .home{
+        padding: 1rem 4rem;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    header{
+        left: -105%;
+    }
+    #menuIcon{
+        display: block;
+    }
+    header.toggle{
+        left: 0%;
+    }
+    body {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    html{
+        font-size: 62.5%;
+    }
+    header .navbar ul a {
+        padding: 1rem;
+        margin: 1.1rem 0;
+        font-size: large;
+         
+    }
+    .education .box-container .box p,
+    .education .box-container .box span{
+        font-size: 1.5rem;
+    }
+    .education .box-container .box h3 {
+        font-size: 2.1rem;
+    }
+    footer h3 {
+        font-size: 1rem;
+    }
+    footer ul.social li {
+        margin: 0.5em 0.5em 0.5em 0.5em;
+    }
+    footer ul.social li a:hover {
+        top: -3px;
+    }
+    footer ul.social li a span {
+        font-size: 1.2rem;
+    }
+
+}
+
+@media screen and (max-width: 420px) {
+    header{
+        width: 100%;
+    }
+    .heading{
+        margin: 0 .3rem;
+    }
+  
+    .education .box-container .box{
+        width: 100%;
+        padding:1rem 8rem;
+        padding-left: 3rem;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .education .box-container .box h3 {
+        font-size: 2.9rem;
+    }
+    .education .box-container .box p,
+    .education .box-container .box span{
+        font-size: 2.4rem;
+    }   
+
+}
+
+@media screen and (max-width: 360px) {
+    header{
+        height: 100%; ;
+    }
+    .heading{
+        margin: 0 .3rem;
+    }
+    .about .row .counter .box{
+        width: 100%;
+    }
+    .education .box-container .box h3 {
+        font-size: 2.4rem;
+    }
+    .education .box-container .box p,
+    .education .box-container .box span{
+        font-size: 2.1rem;
+    }   
+}
