@@ -1,0 +1,41 @@
+@import './app.css';
+
+.logo {
+    color: var(--dark);
+}
+
+.logo:hover {
+    color: var(--main);
+}
+
+.similaire .card img {
+    min-height: 22rem;
+    max-height: 22rem;
+    width: 100%;
+}
+.similaire {
+    margin-bottom: 1rem;
+}
+.similaire .card .detail {
+    display: none;
+    background: var(--dark);
+    color: var(--white);
+    /* margin-left: 25rem; */
+    display: flex;
+    position: absolute;
+    top:0;
+    right:0;
+    margin-top: 20rem;
+    margin-right: .5rem;
+    border-radius: .3rem;
+    
+}
+
+/* footer a {
+    color: var(--dark);
+} */
+@media screen and (max-width: 768px) {
+    .similaire .card .detail {
+        display: block;
+    }
+}

@@ -1,0 +1,138 @@
+
+.modal input[type=text],
+.modal input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border-bottom: 1px solid #ddd;
+    box-shadow: 0 .1rem .1rem gray;
+    box-sizing: border-box;
+}
+
+.modal .cancelbtn {
+    width: auto;
+    padding: 8px 14px;
+    background-color: var(--danger);
+    color: var(--white);
+}
+
+.modal .imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+.modal img.avatar {
+    width: 5rem;
+    border-radius: 50%;
+}
+
+.modal .container {
+    padding: 16px;
+}
+
+.modal span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+.login-modal {
+    display: none;
+    position: fixed;
+    overflow-y: hidden;
+    z-index: 1000;
+    left: 0;
+    top: 0; right: 0;
+    width: auto;
+    height: 100%;
+    overflow: auto;
+    background-color: #000;
+    background-color: rgba(0,0,0,0.7);
+    padding-top: 60px;
+    margin: auto auto;
+}
+
+.modal .modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto;
+    border: 1px solid #888;
+    width: 65%;
+    border-radius: 1rem;
+}
+
+.modal .login {
+    text-align: center;
+    justify-content: center;
+}
+.modal .btn-login {
+    background: var(--main);
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    cursor: pointer;
+    width: auto;
+    font-size: 1.1rem;
+    text-align: center;
+}
+.modal .close {
+    position: absolute;
+    right: 1rem;
+    top: 0;
+    margin-top: -3rem;
+    color: dimagray;
+    font-size: 3rem;
+    padding: .2rem 1.5rem;
+}
+
+.modal .close:hover,
+.modal .close:focus {
+    background: var(--danger);
+    color: var(--white);
+    cursor: pointer;
+}
+.modal span .pwd {
+    color: var(--dark);
+}
+
+.animate
+{
+ -webkit-animation: animatezoom 0.6s;
+ animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+ from {-webkit-transform: scale(0)}
+ to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+    from {transform: scale(0)}
+    to {transform: scale(1)}
+}
+
+@media screen and(max-width: 300px){
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+    .login-modal .btn-login {
+        padding: 8px 16px;
+    }
+}
+
+@media screen and (min-width: 319px) and (max-width:425px) {
+
+    .modal .btn-login {
+        width: auto;
+        margin-left: 0%;
+        padding: 8px 13px;
+        text-align: center;
+    }
+    .modal .modal-content {
+        width: 80%;
+    }
+}

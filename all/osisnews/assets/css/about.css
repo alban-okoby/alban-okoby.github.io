@@ -1,0 +1,12 @@
+.about {
+    margin-top: 5rem;
+    box-shadow: 0 0 .5rem gray;
+    background-color: var(--white);
+    border-radius: var(--card-radius);
+    padding-bottom: 1rem;
+}
+.carousel-item img {
+    max-height: 45rem;
+    width: auto;
+    object-fit: cover;
+}
