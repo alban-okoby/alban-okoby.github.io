@@ -37,7 +37,7 @@ html::-webkit-scrollbar-thumb{
 }
 body{
     background: var(--gray);
-    color(--white);
+    color: var(--white);
     overflow-x: hidden;
     margin-left: 35rem;
 }
@@ -98,6 +98,14 @@ header .utilisateur .nom{
 header .utilisateur p{
     font-size: 2.8rem;
     font-family: 'Tangerine' ,sans-serif;
+}
+header .utilisateur .phones a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-family: 'Arial, sans-serif';
+    color: var(--yellow);
+
 }
 header .navbar{
     width: 100%;
@@ -216,7 +224,7 @@ section{
 /* End Style home */
 
 /* Starts about style section */
-.heading{
+.heading, hr{
     font-size: 4rem;
     margin: 0 .5rem;
     padding: 1rem;
@@ -405,10 +413,9 @@ ul.social {
     margin: 0;
     list-style: none;
     padding-left: 0;
-}
-ul.social {
     padding: 1em 0.5em 0 0.5em;
 }
+
 ul.social li {
     position: relative;
     display: inline-block;
@@ -497,6 +504,12 @@ ul.social li a:before {
     background-color: transparent;
 } */
 
+footer h5 {
+    font-size: medium;
+    text-align: center;
+    padding: 1rem;
+    margin: 1.7rem 0;
+}
 /* Media Queries */
 @media screen and (max-width: 1200px) {
     html{

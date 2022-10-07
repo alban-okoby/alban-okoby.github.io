@@ -2,6 +2,13 @@ let toggleBtn = document.getElementById('toggle-btn');
 let body = document.body;
 let darkMode = localStorage.getItem('dark-mode');
 
+// Date 
+
+let year = document.getElementById('year');
+    year.innerHTML = new Date().getFullYear();
+   
+
+
 const enableDarkMode = () =>{
    toggleBtn.classList.replace('fa-sun', 'fa-moon');
    body.classList.add('dark');
