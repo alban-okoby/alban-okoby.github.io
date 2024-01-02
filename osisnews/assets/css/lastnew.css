@@ -1,0 +1,54 @@
+
+.home-section {
+    margin-top: 11rem;
+    background: #EEE; // trouver bonne couleur
+    padding: 1rem .5rem;
+}
+.hom-section .box-left h1, 
+.hom-section .box-left p {
+    padding: 1rem 2rem;
+}
+.home-section .last-new p {
+    font-size: 127%;
+    width: 95%;
+    text-align: left;
+}
+.last-new .box-left {
+    background: var(--white);
+    padding: 1rem;
+}
+.last-new .box-left .author {
+    font-size: 1.7rem;
+    margib
+}
+.last-new .box-left p{
+    font-size: 1.5rem;
+    padding: 1rem;
+    text-align: justify;
+}
+
+.box-left .box-img img {
+    width: 97%;
+    min-height: 5rem;
+    max-height: 45rem;
+}
+.box-img {
+    width: 93%;
+    min-height: 5rem;
+    max-height: 45rem;
+    object-fit: fill;
+}
+
+.box-right {
+    margin-top: 3rem;
+}
+
+.box-right img {
+    height: auto;
+    min-height: 13rem;
+    max-height: 13rem;
+    width: 100%;
+    border-radius: var(--card-radius);
+}
+
+    
